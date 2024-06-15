@@ -14,6 +14,5 @@ public class MainController {
     @GetMapping("/authors")
     public String authorsPage() {
         return "game-authors";
-
     }
 }
