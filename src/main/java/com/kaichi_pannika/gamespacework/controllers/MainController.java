@@ -8,6 +8,12 @@ public class MainController {
 
     @GetMapping("/mainPage")
     public String mainPage() {
-       return "startpage";
+        return "startpage";
+    }
+
+    @GetMapping("/authors")
+    public String authorsPage() {
+        return "game-authors";
+
     }
 }
