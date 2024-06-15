@@ -1,4 +1,4 @@
 package com.kaichi_pannika.gamespacework.entity.ships;
 
-public class Warchips {
+public abstract class Ship {
 }
