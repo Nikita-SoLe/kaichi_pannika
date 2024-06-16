@@ -15,4 +15,9 @@ public class MainController {
     public String authorsPage() {
         return "game-authors";
     }
+
+    @GetMapping("/newGame")
+    public String gameBeginPage() {
+        return "new-game-page";
+    }
 }
