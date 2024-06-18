@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>New Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню игры</title>
+  <style>
+    body {
+      background-image: url('/art-kosmos-stanciya-korabli.jpg'); /* Замените 'ваш_путь_к_изображению.jpg' на путь к вашему изображению */
+      background-size: cover;
+      background-position: center;
+      color: #ecf0f1;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон для читабельности текста */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: block;
+      width: 200px;
+      padding: 15px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 10px;
+      background-color: #3498db;
+      color: #ecf0f1;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #2980b9;
+    }
+  </style>
 </head>
 <body>
+<div class="container">
+  <h1>Меню игры</h1>
+  <button class="button" onclick="startNewGame()">Новая игра</button>
+  <button class="button" onclick="loadSave()">Загрузка сохранения</button>
+  <button class="button" onclick="openEncyclopedia()">Энциклопедия</button>
+  <button class="button" onclick="exitGame()">Выход</button>
+</div>
 
+<audio id="background-music" src="/Jerry_Goldsmith_-_Attack_At_The_Wall_55638903.mp3" autoplay loop></audio>
+
+<script>
+  function startNewGame() {
+    alert("Начинаем новую игру!");
+    // Здесь добавьте логику для начала новой игры
+  }
+
+  function loadSave() {
+    alert("Загружаем сохранение...");
+    // Здесь добавьте логику для загрузки сохранения
+  }
+
+  function openEncyclopedia() {
+    alert("Открываем энциклопедию...");
+    // Здесь добавьте логику для открытия энциклопедии
+  }
+
+  function exitGame() {
+    alert("Выходим из игры...");
+    // Здесь добавьте логику для выхода из игры
+  }
+</script>
 </body>
 </html>
